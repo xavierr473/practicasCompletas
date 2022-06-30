@@ -1,0 +1,70 @@
+<html>
+	<title>Conversor Celsius a Farenheit/Kelvin</title>
+<body bgcolor="orange">
+
+	<h2>Conversor de temperaturas</h2>
+	<p>Escriba aqui el valor de la temperatura en celcius:</p>
+
+	<p>
+  		<label>Celsius</label>
+  		<input id="inputCelsius1" type="number" placeholder="Celsius">
+  		<button onclick="Celsius()">Calcular</button>
+	</p>
+
+	<p>Farenheit: <span id="Farenheit1"></span></p>
+	<p>Kelvin: <span id="Kelvin1"></span></p>
+
+	<script>
+		function Celsius() {
+  		var temp = document.getElementById("inputCelsius1").value;
+  				   document.getElementById("Farenheit1").innerHTML=((temp*9/5)+32);
+                   document.getElementById("Kelvin1").innerHTML=(parseInt(temp)+273.15);
+		}	
+	</script>
+
+	
+	<br>
+	<p>Escriba aqui el valor de la temperatura en Farenheit:</p>
+
+	<p>
+  		<label>Farenheit</label>
+  		<input id="inputFarenheit2" type="number" placeholder="Farenheit">
+  		<button onclick="Farenheit()">Calcular</button>
+	</p>
+
+	<p>Kelvin: <span id="Kelvin2"></span></p>
+	<p>Celsius: <span id="Celsius2"></span></p>
+
+	<script>
+		function Farenheit() {
+  		var temp = document.getElementById("inputFarenheit2").value;
+  				   document.getElementById("Kelvin2").innerHTML= ((temp - 32) * 5/9 ) + 273.15;
+                   document.getElementById("Celsius2").innerHTML=((temp-32)*(5/9));
+		}	
+	</script>
+
+
+	<br>
+	<p>Escriba aqui el valor de la temperatura en Kelvin:</p>
+
+	<p>
+  		<label>Kelvin</label>
+  		<input id="inputKelvin3" type="number" placeholder="Kelvin">
+  		<button onclick="Kelvin()">Calcular</button>
+	</p>
+
+	<p>Celsius: <span id="Celsius3"></span></p>
+	<p>Farenheit: <span id="Farenheit3"></span></p>
+
+	<script>
+		function Kelvin() {
+  		var temp = document.getElementById("inputKelvin3").value;
+  				   document.getElementById("Celsius3").innerHTML= temp - 273.15;
+                   document.getElementById("Farenheit3").innerHTML= ((temp - 273.15) * 9/5 ) + 32;
+		}	
+	</script>
+
+	<p><a href="D:\DESARROLLO DE APLICACIONES POR INTERNET II\JavaScript Practicas\menuPracticas.html"> Volver al Menu </a></p>
+
+</body>
+</html>

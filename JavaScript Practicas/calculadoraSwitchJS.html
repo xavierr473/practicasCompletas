@@ -1,0 +1,82 @@
+<html>
+
+<body>
+	<script>
+		
+		alert("CALCULADORA MATEMATICA<br>");
+		alert("1. Suma, 2. Resta, 3. Multiplicacion, 4. Division<br>");
+
+		let opcion = parseInt(prompt("Ingresa la opcion que quieres: "));
+
+		switch(opcion){
+			case 1:{
+				alert("Elegiste suma");
+
+				let valor1 = parseInt(prompt("Ingresa el Valor 1"));
+				let valor2 = parseInt(prompt("Ingresa el Valor 2"));
+
+				let suma = valor1 + valor2;
+
+				document.write("Valor 1: ",valor1, " y el valor 2: ",valor2);
+
+				alert("La suma es: "+suma);
+				document.write("La suma es: ",suma,"<br>");
+				break;
+			}
+
+			case 2:{
+				alert("Elegiste resta");
+
+				let valor1 = parseInt(prompt("Ingresa el Valor 1"));
+				let valor2 = parseInt(prompt("Ingresa el Valor 2"));
+
+				let resta = valor1 - valor2;
+
+				document.write("Valor 1: ",valor1, " y el valor 2: ",valor2);
+
+				alert("La resta es: "+resta);
+				document.write("La resta es: ",resta,"<br>");
+				break;
+			}
+
+			case 3:{
+				alert("Elegiste multiplicacion");
+
+				let valor1 = parseInt(prompt("Ingresa el Valor 1"));
+				let valor2 = parseInt(prompt("Ingresa el Valor 2"));
+
+				let multiplicacion = valor1 * valor2;
+
+				document.write("Valor 1: ",valor1, " y el valor 2: ",valor2);
+
+				alert("La multiplicacion es: "+multiplicacion);
+				document.write("La multiplicacion es: ",multiplicacion,"<br>");
+				break;
+			}
+
+			case 4:{
+				alert("Elegiste division");
+
+				let valor1 = parseInt(prompt("Ingresa el Valor 1"));
+				let valor2 = parseInt(prompt("Ingresa el Valor 2"));
+
+				let division = valor1 / valor2;
+
+				document.write("Valor 1: ",valor1, " y el valor 2: ",valor2);
+
+				if(valor2 == 0){
+					document.write("La division es: La division entre cero no existe<br>");
+					alert("La division es: La division entre cero no existe");
+				} else {
+					alert("La division es: "+division);
+					document.write("La division es: ",division,"<br>");
+				}
+				break;
+			}
+		}
+
+	</script>
+
+	<p><a href="D:\DESARROLLO DE APLICACIONES POR INTERNET II\JavaScript Practicas\menuPracticas.html"> Volver al Menu </a></p>
+</body>
+</html>
